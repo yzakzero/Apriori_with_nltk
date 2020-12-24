@@ -6,7 +6,7 @@ from nltk.corpus import stopwords # 需要下载stopwords
 
 def readtitle():
     l = []
-    for i in open("/Users/liuyifeng/onedrive/OneDrive - Macau University of Science and Technology/Pycharm/DataMining/BilibiliAnimeData_Analysis-master/dataL.csv"):
+    for i in open(dataL.csv"):
         q = int(i.find("|"))
         l.append(i[0:q])
 
@@ -19,7 +19,7 @@ def readtitle():
 
 # def readabstract():
 #     l = []
-#     for i in open("/Users/liuyifeng/onedrive/OneDrive - Macau University of Science and Technology/Pycharm/DataMining/BilibiliAnimeData_Analysis-master/dataL.csv"):
+#     for i in open("dataL.csv"):
 #         q = int(i.find("|"))
 #
 #         l.append(i[q+1:-2])
