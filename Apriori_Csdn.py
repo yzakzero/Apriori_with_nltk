@@ -34,7 +34,7 @@ def readtitle():
 def readabstract():
     l = []
     x=[]
-    for i in open("/Users/liuyifeng/onedrive/OneDrive - Macau University of Science and Technology/Pycharm/DataMining/BilibiliAnimeData_Analysis-master/dataL.csv"):
+    for i in open("dataL.csv"):
         q = int(i.find("|"))
 
         a=i[q+1:-2]
