@@ -149,6 +149,6 @@ def rulesFromConseq(freqSet, H, supportData, brl, minConf=0.7):
         #满足最小可信度要求的规则列表多于1,则递归来判断是否可以进一步组合这些规则
             rulesFromConseq(freqSet, Hmp1, supportData, brl, minConf)
 
-L,suppData=apriori(words,0.01)
+L,suppData=apriori(words,0.01)#作业的意思应该是设置成0.02，0.03，0.04对应（2，3，4）
 rules=generateRules(L,suppData,0.5)
 #print(L)
